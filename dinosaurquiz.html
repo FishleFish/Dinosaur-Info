@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title>
+	<style type="text/css">
+			ul{
+				list-style-type: none;
+				margin: 0px;
+				padding: 0px;
+			    background-color: black;
+			    overflow: hidden;
+			}
+			li{
+				float: left;
+			}
+			li a{
+				display: block;
+				color: darkred;
+                padding: 8px 16px;
+				text-decoration: none;
+				font-family: Centaur;
+				text-align: center;
+			}
+			li a:hover{
+				background-color: blue;
+				color: white;
+			}
+			legend{
+				font-size: 50px;
+				font-family: Chiller;
+				color: red;
+			}
+			label{
+				font-family: Ranchers;
+				font-size: 20px;
+			}
+			#bg{
+			background: url();
+			width: 2000px;
+			height: 2000px;
+		    }
+		#main{
+			background-color: blue;
+			width: 750px;
+			height: 2305px;
+			background-color: rgba(0, 128, 128, 0.8);
+			margin-left: 400px;
+			padding-left: 20px;
+			padding-top: 50px;
+			border-width: 10px;
+			border-style: dashed;
+			border-color: gray; 
+		}
+		button{
+			width: 110px;
+			height: 60px;
+		}
+		button a{
+            text-decoration: none;
+            color: blue;
+            font-size: 30px;
+		}
+	</style>
+</head>
+	<body>
+	<ul>
+      	<li>
+      		<a href="noquit.html" target="_blank">Dinosaur Quiz</a>
+      	</li>
+      	<li>
+      		<a href="noquit.html" target="_blank">Dinosaur Youtube</a>
+      	</li>
+      	<li>
+      		<a href="noquit.html" target="_blank">Main Page</a>
+      	</li>
+        <li>
+            <a href="noquit.html" target="_blank">Login</a>
+        </li>
+      	<li>
+      		<a href="#">
+      			<input type="search" name="Search">
+      			<input type="submit" value="Search">
+      		</a>
+      	</li>
+      </ul>	
+	<fieldset>
+		  <div id="main">
+<form align="center">
+	<legend>Dinosaur Quiz</legend>
+	<br>
+	<br>
+	<br>
+	<label>First Name</label>
+	<input type="text" name="First" required="required"><br>
+	<br>
+    <label>Last Name</label>
+    <input type="text" name="Last" required="required"><br>
+    <br>
+    <label>Age</label>
+    <input type="number" name="Age" min="5" max="150" placeholder="0" required="required"><br>
+    <br>
+    <label>Gender</label><br>
+    <input type="radio" name="Gender" value="male" required="required">
+    <label>Male</label>
+    <input type="radio" name="Gender" value="female" required="required">
+    <label>Female</label><br>
+    <br>
+    <h3>Question 1</h3>
+    <label>What diet does the T-Rex have?</label><br>
+    <br>
+    <input type="radio" name="diet" value="meat" required="required">
+    <label>Carnivorous</label><br>
+    <input type="radio" name="diet" value="plants" required="required">
+    <label>Herbivorous</label><br>
+    <input type="radio" name="diet" value="both" required="required">
+    <label>Omnivorous</label><br>
+    <br>
+    <br>
+    <h3>Question 2</h3>
+    <label>How many species of dinosaurs are there?</label><br>
+    <br>
+    <input type="radio" name="species" value="About 1500" required="required">
+    <label>About 1500</label><br>
+    <input type="radio" name="species" value="About 700" required="required">
+    <label>About 700</label><br>
+    <input type="radio" name="species" value="About 100" required="required">
+    <label>About 100</label><br>
+    <input type="radio" name="species" value="About 5000" required="required">
+    <label>About 5000</label>
+    <br>
+    <br>
+    <h3>Question 3</h3>
+    <label>How many years ago did the dinosaurs die?</label><br>
+    <br>
+    <input type="radio" name="death" value="20" required="required">
+    <label>About 20 Million Years Ago</label><br>
+    <input type="radio" name="death" value="1" required="required">
+    <label>About 1 Million Years Ago</label><br>
+    <input type="radio" name="death" value="66" required="required">
+    <label>About 66 Million Years Ago</label><br>
+    <input type="radio" name="death" value="35" required="required">
+    <label>About 35 Million Years Ago</label>
+    <br>
+    <br>
+    <h3>Question 4</h3>
+    <label>Dinosaurs lived in water.</label><br>
+    <br>
+    <input type="radio" name="water" value="true" required="required">
+    <label>True</label><br>
+    <input type="radio" name="water" value="false" required="required">
+    <label>False</label><br>
+    <br>
+    <br>
+    <h3>Question 5</h3>
+    <label>Dinosaurs only lived on land.</label><br>
+    <br>
+    <input type="radio" name="land" value="yes" required="required">
+    <label>True</label><br>
+    <input type="radio" name="land" value="no" required="required">
+    <label>False</label><br>
+    <br>
+    <br>
+    <h3>Question 6</h3>
+    <label>What are dinosaurs more closely related to?</label><br>
+    <br>
+    <input type="radio" name="related" value="reptiles" required="required">
+    <label>Reptiles</label><br>
+    <input type="radio" name="related" value="amphibians" required="required">
+    <label>Amphibians</label><br>
+    <input type="radio" name="related" value="birds" required="required">
+    <label>Birds</label><br>
+    <br>
+    <br>
+    <h3>Question 7</h3>
+    <label>What do you call a dinosaur that stands on 2 legs?</label><br>
+    <br>
+    <input type="radio" name="legs" value="theropod" required="required">
+    <label>Theropod</label><br>
+    <input type="radio" name="legs" value="sauropod" required="required">
+    <label>Sauropod</label><br>
+    <input type="radio" name="legs" value="quadruped" required="required">
+    <label>Quadruped</label>
+    <br>
+    <br>
+    <h3>Question 8</h3>
+    <label>What continent did the dinosaurs in the triassic period live on?</label><br>
+    <br>
+    <input type="radio" name="live" value="Asia" required="required">
+    <label>Asia</label><br>
+    <input type="radio" name="live" value="Pangea" required="required">
+    <label>Pangea</label><br>
+    <input type="radio" name="live" value="Gondwana" required="required">
+    <label>Gondwana</label><br>
+    <input type="radio" name="live" value="North America" required="required">
+    <label>North America</label>
+    <br>
+    <br>
+    <button type="submit"><a href="key.html" target="_blank">Submit</a></button>
+<br>
+</form>
+</div>
+</fieldset>
+</body>
+</html>
